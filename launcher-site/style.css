@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #0a0a12;
+    color: #f0f0f0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Герой-секция */
+.hero-section {
+    background: linear-gradient(135deg, rgba(10, 10, 18, 0.9) 0%, rgba(15, 30, 46, 0.9) 100%), 
+                url('images/background.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 900px;
+    z-index: 2;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.spring-icon {
+    color: #00d9ff;
+    font-size: 3rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #00d9ff, #00ffaa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+    color: #aaa;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+/* Карточка лаунчера */
+.launcher-card {
+    background: rgba(20, 25, 40, 0.85);
+    backdrop-filter: blur(15px);
+    border-radius: 24px;
+    padding: 40px;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 550px;
+    border: 1px solid rgba(0, 217, 255, 0.2);
+    box-shadow: 0 20px 50px rgba(0, 217, 255, 0.15);
+    transition: all 0.3s ease;
+}
+
+.launcher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 60px rgba(0, 217, 255, 0.25);
+}
+
+.card-icon {
+    font-size: 4.5rem;
+    color: #00d9ff;
+    margin-bottom: 20px;
+}
+
+.launcher-card h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.card-description {
+    color: #88ffcc;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.size-info {
+    background: rgba(0, 217, 255, 0.1);
+    border-radius: 50px;
+    padding: 10px 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 217, 255, 0.3);
+}
+
+.size-info i {
+    color: #00d9ff;
+}
+
+/* Кнопка скачивания */
+.download-btn {
+    background: linear-gradient(135deg, #0066ff, #00d9ff);
+    color: white;
+    border: none;
+    padding: 20px 45px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto 25px;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.download-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.download-btn:hover::before {
+    left: 100%;
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #0055ee, #00c8ff);
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 102, 255, 0.5);
+}
+
+.download-btn:active {
+    transform: scale(0.98);
+}
+
+.download-hint {
+    color: #88ffcc;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.file-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #aaa;
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.file-info span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+/* Поддерживаемые игры */
+.supported-games {
+    margin-top: 50px;
+    padding: 30px;
+    background: rgba(20, 25, 40, 0.6);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.supported-games h3 {
+    color: #00d9ff;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.games-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.game-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.game-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-3px);
+}
+
+.game-icon {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.rust { color: #ff6b35; }
+.roblox { color: #ff0066; }
+.csgo { color: #ffcc00; }
+.standoff { color: #00cc88; }
+.minecraft { color: #00aa66; }
+
+/* Основной контент */
+.content-section {
+    padding: 80px 0;
+}
+
+.content-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    text-align: center;
+    background: linear-gradient(90deg, #00d9ff, #00ffaa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+    margin-bottom: 80px;
+}
+
+.feature-card {
+    background: linear-gradient(145deg, rgba(20, 25, 40, 0.8), rgba(30, 35, 50, 0.8));
+    border-radius: 20px;
+    padding: 35px;
+    border: 1px solid rgba(0, 217, 255, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #00d9ff, #00ffaa);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(0, 217, 255, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 217, 255, 0.15);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #00d9ff;
+    margin-bottom: 25px;
+}
+
+.feature-card h3 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.game-details {
+    background: rgba(20, 25, 40, 0.6);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.game-feature {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.game-feature:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.game-feature h4 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin: 40px 0 60px;
+}
+
+.step {
+    text-align: center;
+    padding: 30px;
+    background: rgba(20, 25, 40, 0.6);
+    border-radius: 15px;
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: #00d9ff;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.system-requirements {
+    background: rgba(20, 25, 40, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 40px;
+    border-left: 4px solid #00d9ff;
+}
+
+.system-requirements ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.system-requirements li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.system-requirements li:before {
+    content: "✓";
+    color: #00ffaa;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.faq {
+    margin-top: 60px;
+}
+
+.faq-item {
+    background: rgba(20, 25, 40, 0.6);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 4px solid #00d9ff;
+}
+
+.faq-item h3 {
+    color: #00d9ff;
+    margin-bottom: 10px;
+}
+
+/* Футер */
+footer {
+    background: rgba(10, 15, 25, 0.95);
+    padding: 60px 20px 40px;
+    margin-top: 80px;
+    border-top: 1px solid rgba(0, 217, 255, 0.2);
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00d9ff;
+    margin-bottom: 25px;
+}
+
+.copyright {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.disclaimer {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #88ffcc;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    color: #00d9ff;
+}
+
+.version-info {
+    color: #666;
+    font-size: 0.9rem;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.8rem;
+    }
+    
+    .subtitle {
+        font-size: 1.3rem;
+    }
+    
+    .launcher-card {
+        padding: 30px 20px;
+    }
+    
+    .download-btn {
+        padding: 18px 30px;
+        font-size: 1.2rem;
+    }
+    
+    .games-grid {
+        gap: 15px;
+    }
+    
+    .game-item {
+        min-width: 100px;
+        padding: 12px 20px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

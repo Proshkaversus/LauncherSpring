@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Launcher | Запускай игры легко</title>
+    <meta name="description" content="Spring Launcher - универсальный лаунчер для Rust, Roblox, CS:GO 2, Standoff 2 и Minecraft. Скачать бесплатно.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <!-- Обложка/Фон -->
+        <header class="hero-section">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <div class="logo">
+                    <i class="fas fa-leaf spring-icon"></i>
+                    <h1 class="title">Spring Launcher</h1>
+                </div>
+                <p class="subtitle">Универсальный лаунчер для твоих игр</p>
+                
+                <!-- Основная карточка с информацией -->
+                <div class="launcher-card">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h2>Версия 3.2.1</h2>
+                    <p class="card-description">Обновление от 20.01.2024 • Оптимизация производительности</p>
+                    
+                    <!-- Информация о размере -->
+                    <div class="size-info">
+                        <i class="fas fa-weight"></i>
+                        <span>Вес установщика: 80.4 МБ</span>
+                    </div>
+                    
+                    <!-- Синяя кнопка скачивания -->
+                    <button class="download-btn" id="downloadBtn">
+                        <i class="fas fa-download"></i>
+                        Скачать Spring Launcher
+                    </button>
+                    
+                    <div class="file-info">
+                        <span><i class="fas fa-windows"></i> Windows 10/11 (64-bit)</span>
+                        <span><i class="fas fa-microchip"></i> 80.4 МБ</span>
+                        <span><i class="fas fa-shield-alt"></i> Без вирусов</span>
+                    </div>
+                    
+                    <p class="download-hint">Нажмите для загрузки установочного файла</p>
+                </div>
+                
+                <!-- Поддерживаемые игры -->
+                <div class="supported-games">
+                    <h3>Поддерживаемые игры:</h3>
+                    <div class="games-grid">
+                        <div class="game-item">
+                            <i class="fas fa-fire game-icon rust"></i>
+                            <span>RUST</span>
+                        </div>
+                        <div class="game-item">
+                            <i class="fas fa-cube game-icon roblox"></i>
+                            <span>ROBLOX</span>
+                        </div>
+                        <div class="game-item">
+                            <i class="fas fa-crosshairs game-icon csgo"></i>
+                            <span>CS:GO 2</span>
+                        </div>
+                        <div class="game-item">
+                            <i class="fas fa-mobile-alt game-icon standoff"></i>
+                            <span>STANDOFF 2</span>
+                        </div>
+                        <div class="game-item">
+                            <i class="fas fa-mountain game-icon minecraft"></i>
+                            <span>MINECRAFT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Основной контент -->
+        <main class="content-section">
+            <section class="features">
+                <h2>Почему Spring Launcher?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Все игры в одном месте</h3>
+                        <p>Запускайте Rust, Roblox, CS:GO 2, Standoff 2 и Minecraft из единого интерфейса без лишних лаунчеров.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Быстрый запуск</h3>
+                        <p>Оптимизированный запуск с предзагрузкой ресурсов. Игры стартуют на 40% быстрее.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>Авто-обновления</h3>
+                        <p>Автоматическое обновление игр и самого лаунчера. Всегда последние версии.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="description">
+                <h2>О лаунчере</h2>
+                <p><strong>Spring Launcher</strong> — это современный универсальный лаунчер для популярных игр. 
+                   Легкий (всего 80.4 МБ), быстрый и удобный инструмент для геймеров, 
+                   который экономит время и системные ресурсы.</p>
+                
+                <div class="game-details">
+                    <h3>Особенности для каждой игры:</h3>
+                    
+                    <div class="game-feature">
+                        <h4><i class="fas fa-fire rust"></i> RUST</h4>
+                        <p>Автоматическая настройка графики под ваше железо, быстрый подбор серверов, мод-менеджер.</p>
+                    </div>
+                    
+                    <div class="game-feature">
+                        <h4><i class="fas fa-cube roblox"></i> ROBLOX</h4>
+                        <p>Быстрый доступ ко всем играм платформы, система избранного, родительский контроль.</p>
+                    </div>
+                    
+                    <div class="game-feature">
+                        <h4><i class="fas fa-crosshairs csgo"></i> CS:GO 2</h4>
+                        <p>Оптимизация сетевых настроек, запуск с кастомными параметрами, статистика матчей.</p>
+                    </div>
+                    
+                    <div class="game-feature">
+                        <h4><i class="fas fa-mobile-alt standoff"></i> STANDOFF 2</h4>
+                        <p>Синхронизация аккаунта, автоматические обновления, запуск в эмуляторе ПК.</p>
+                    </div>
+                    
+                    <div class="game-feature">
+                        <h4><i class="fas fa-mountain minecraft"></i> MINECRAFT</h4>
+                        <p>Управление модами и сборками, запуск разных версий, интеграция с популярными лаунчерами.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="instructions">
+                <h2>Как установить</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Скачайте установщик</h3>
+                        <p>Нажмите синюю кнопку выше для загрузки файла SpringLauncher_Setup.exe (80.4 МБ)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Запустите установку</h3>
+                        <p>Откройте скачанный файл и следуйте инструкциям мастера установки (2-3 минуты)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Настройте игры</h3>
+                        <p>Добавьте пути к установленным играм в настройках лаунчера</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Наслаждайтесь!</h3>
+                        <p>Запускайте все игры из одного места с удобным интерфейсом</p>
+                    </div>
+                </div>
+                
+                <div class="system-requirements">
+                    <h3>Системные требования</h3>
+                    <ul>
+                        <li><strong>ОС:</strong> Windows 10/11 (64-bit)</li>
+                        <li><strong>Процессор:</strong> Intel Core i3 или аналогичный AMD</li>
+                        <li><strong>Оперативная память:</strong> 4 GB минимум</li>
+                        <li><strong>Место на диске:</strong> 200 MB для лаунчера + место под игры</li>
+                        <li><strong>Интернет:</strong> Широкополосное подключение для обновлений</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="faq">
+                <h2>Частые вопросы</h2>
+                <div class="faq-item">
+                    <h3>Безопасен ли Spring Launcher?</h3>
+                    <p>Да, лаунчер полностью безопасен. Мы не собираем личные данные, не майним криптовалюту и не показываем рекламу.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Почему лаунчер такой легкий?</h3>
+                    <p>Мы используем современные технологии сжатия и оптимизации кода. Все лишнее убрано для максимальной производительности.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Как добавить свою игру?</h3>
+                    <p>В настройках есть кнопка "Добавить игру". Укажите путь к исполняемому файлу, и игра появится в лаунчере.</p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-leaf spring-icon"></i>
+                    <span>Spring Launcher</span>
+                </div>
+                
+                <p class="copyright">© 2024 Spring Launcher. Все права защищены.</p>
+                <p class="disclaimer">Все названия игр являются собственностью соответствующих правообладателей.</p>
+                
+                <div class="footer-links">
+                    <a href="https://github.com/yourusername/spring-launcher/releases" target="_blank">
+                        <i class="fab fa-github"></i> GitHub Releases
+                    </a>
+                    <a href="mailto:support@springlauncher.com">
+                        <i class="fas fa-envelope"></i> Поддержка
+                    </a>
+                    <a href="#privacy">
+                        <i class="fas fa-user-shield"></i> Конфиденциальность
+                    </a>
+                </div>
+                
+                <div class="version-info">
+                    <p>Версия 3.2.1 • 80.4 MB • Обновлено: 20.01.2024</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
