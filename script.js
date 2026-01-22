@@ -1,6 +1,6 @@
 // КОНФИГУРАЦИЯ - ЗАМЕНИТЕ ЭТУ ССЫЛКУ!
 const CONFIG = {
-    DOWNLOAD_URL: "https://raw.githubusercontent.com/Proshkaversus/SpringLauncherSite/main/SpringLauncher_Setup.exe",
+    DOWNLOAD_URL: "https://github.com/Proshkaversus/files/releases/download/v1.0.1/SpringLauncher-2.0.1.x64.exe",
     FILENAME: "SpringLauncher_Setup.exe"
 };
 
@@ -79,4 +79,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Инструкция для замены ссылки
     console.log('🔗 Чтобы кнопка работала, замените DOWNLOAD_URL в script.js на вашу ссылку с GitHub');
     console.log('📥 Текущая ссылка:', CONFIG.DOWNLOAD_URL);
+
 });
